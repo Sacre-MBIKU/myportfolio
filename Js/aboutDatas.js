@@ -2,7 +2,7 @@
 * On renvoi les données du nom au DOM
 */
 
-let urlApi = "http://localhost:3000/"
+let urlApi = "https://my-json-server.typicode.com/Sacre-MBIKU/myportfolio/"
 
 //La classe Name qui décrit le nom au DOM
 
