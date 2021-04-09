@@ -1,0 +1,39 @@
+
+
+    ul{
+        @include displaySpaceAround;
+
+        @media screen and (max-width : 768px) {
+            @include displayCenterTop;
+            margin-top: -3rem;
+        }
+
+        li{
+            list-style: none;
+            padding-right: 2rem;
+
+           
+            
+            a{
+                text-decoration: none;
+                font-family: $font-family-tabs;
+                font-size: $font-size-tabs;
+                color: $color-tabs;
+                margin: 1rem;
+                transition: color .5s ease-in-out;
+
+                @media screen and (max-width : 768px) {
+                    font-size: 1.2rem;
+                }
+        
+
+                &:hover{
+                    color: $color-hover-tabs;
+                }
+
+                &.active{
+                    color: $color-hover-tabs;
+                }
+            }
+        }
+    }

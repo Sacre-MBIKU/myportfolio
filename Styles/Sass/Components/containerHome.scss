@@ -1,0 +1,88 @@
+.home__container{
+    position: absolute;
+    top: 60%;
+    left: 2%;
+    width: 40%;
+    height: 40%;
+    transform: translateY(-50%);
+    font-family: $font-family-title ;
+    font-size: 1.3rem;
+    padding: 2%;
+    @include displayColumn;
+    z-index: 20000;
+
+   
+
+    .home____container__self-presentation{
+        color: $color-tabs;
+        @media screen and (max-width : 411px) {
+            width: 200%;
+        }
+    }
+
+    .home____container__touch-phrase{
+        font-size: 1.2rem;
+        color:  #a5a4a4;
+        @media screen and (max-width : 411px) {
+            width: 200%;
+        }
+    }
+
+    .home____container__btns{
+        
+        width: 50%;
+        margin: 0;
+        @media screen and (max-width : 411px) {
+            width: 100%;
+        }
+
+        ul{
+            
+            position: relative;
+            @include displaySpaceAround;
+            padding: 0;
+            width: 100%;
+
+           
+
+            @media screen and (max-width : 768px) {
+                width: 200%;
+            }
+            
+
+            li{
+                list-style: none;
+                width: 45% ;
+
+                a{
+                    @include displayCenter;
+                    height: 100%;
+                    z-index: 19990000;
+                    text-decoration: none;
+                    color: $color-tabs;
+                    text-align: center;
+                    font-size: 1.3rem;
+                    line-height: 1.3rem;
+                    padding: 1rem 1.1rem;
+                    background-color: $color-border-tabs;
+                    cursor: pointer;
+                    transition: all .8s ease-in-out;
+
+                    
+                   
+                    
+                    &.container__btns--important {
+                        background-color: $color-hover-tabs;
+                    }
+
+                    &:hover{
+                        background-color: $color-tabs;
+                        color: $color-hover-tabs;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}

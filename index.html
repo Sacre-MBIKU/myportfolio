@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe Js</title>
+    <link rel="stylesheet" href="Styles/Css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">
+            Sacré <span>MBIKU</span>
+        </h1>
+
+        <button id="navBar" class="navBar"></button>
+            
+        <nav>
+            
+            
+            
+            <ul>
+                <li><a class="active" href="#home">Accueil</a></li>
+                <li><a href="#project">Projets</a></li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            
+        </nav>
+    </header>
+
+    
+
+    
+
+    <main class="container">
+
+        
+        
+       <section class="home activeContent" id="home">
+
+        
+           
+           <div class="home__container">
+            
+            
+                <h2 class="home____container__self-presentation">
+                    Je suis
+                </h2>
+
+                <h2 class="home____container__touch-phrase">
+                   <span>La créativité innovente,</span>
+                   <span>est notre centre d'intérêt.</span>
+                </h2>
+                
+                <div class="home____container__btns">
+                    <ul>
+                        <li><a class="container__btns--important" href="#project">projets</a></li>
+                        <li><a href="#home">contact</a></li>
+                    </ul>
+                </div>
+
+               
+           </div>
+
+        
+        
+       
+       </section>
+       <section class="project" id="project">
+           <div class="project__container">
+                <div class="project__arrows project__arrows--left">
+                    <img src="Publics/Images/chevron-circle-right-solid.svg" alt="prevProject">
+                </div>
+                
+
+                <artice class="project-tag--Box">
+                    <aside class="project-box--description">
+                        <h2 class="project-description--title">Déscription</h2>
+                    </aside>
+
+                    <main class="main-project-box">
+                        <figure class="main-project-box--illustration">
+                            
+                        </figure>
+                    </main>
+
+                    <footer class="footer-project-box">
+                        <div class="footer-project-balls footer-project-balls--active"></div>
+                        <div class="footer-project-balls"></div>
+                        <div class="footer-project-balls"></div>
+                    </footer>
+                </artice>
+
+                <div class="project__arrows project__arrows--right">
+                    <img src="Publics/Images/chevron-circle-right-solid.svg" alt="nextProject">
+                </div>
+           </div>
+       </section>
+       <section class="about" id="about">
+            <div class="aboutContainer">
+                        <h2 class="about-title"></h2>
+                <picture class="about__picture">
+                    <source src="Publics/Images/profile.jpg" type="">
+                    
+                </picture>
+                <article class="about-skills">
+
+                    <h2 class="about-skilss-title">Compétences</h2>
+                    <ul class="about-skills-list">
+                    </ul>
+                </article>
+
+                <article class="about-education">
+
+                    <h2 class="about-education-title">Education</h2>
+                    <ul class="about-education-list">
+                    
+                    </ul>
+                </article>
+            </div>
+       </section>
+       <section class="contact" id="contact">
+
+            <div class="contact-container">
+                <h2 class="contact-title">
+                    <span class="contact-title--span">Contacter </span>
+                    <span class="contact-title--span contact-title--span__2">nous Ici !</span>
+                </h2>
+        
+                <main class="contact--main">
+        
+                    <form action="#" class="contact--main--form">
+        
+                        <input type="text" name="name" id="" class="contact--form--name-user" placeholder="nom au complet">
+        
+                        <input type="email" class="contact--form--email-user" placeholder="votre email">
+        
+                        <textarea name="" id="" cols="30" rows="1" class="contact--form--message-user" placeholder="laissez nous votre message"></textarea>
+        
+                        <button type="submit" class="contact--form--btn">Envoyer</button>
+                    </form>
+        
+                    <footer class="footer-contact-box">
+                        <div class="footer-contact-balls "></div>
+                        <div class="footer-contact-balls--active"></div>
+                        <div class="footer-contact-balls"></div>
+                    </footer>
+                </main>
+        
+          
+                
+        
+            </div>
+        </section>
+    </main>
+
+    <section id="menu-bar" class="menu-bar">
+        <ul class="menu-bar__container">
+            <li class="menu-bar-parts menu-bar-parts--cross-icon">
+                <i>X</i>
+            </li>
+            <li class="menu-bar-parts"><a href="#home">Accueil</a></li>
+            <li class="menu-bar-parts"><a href="#project">Projets</a></li>
+            <li class="menu-bar-parts"><a href="#about">A propos</a></li>
+            <li class="menu-bar-parts"><a href="#contact">Contact</a></li>
+        </ul>
+    </section>    
+
+    
+    
+
+    <script src="Js/swipe.js"></script>
+    <script src="Js/aboutDatas.js"></script>
+    <script src="Js/tabs.js"></script>
+    <script src="Js/homeData.js"></script>
+    <script src="Js/slideTabs.js"></script>
+    
+    <script src="Js/menuBar.js"></script>
+    
+    
+</body>
+</html>

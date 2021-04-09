@@ -1,0 +1,68 @@
+
+$background-color : #252525;
+
+@mixin displayCenterBot {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@mixin displayCenterTop {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@mixin displayCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin  displaySpaceAround {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin displayColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@mixin displayColumnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin displayStart {
+    display: flex;
+    justify-content: space-between;
+}
+
+$font-family-tabs : "oswald-regular";
+
+$font-size-tabs : 1.5rem;
+
+$color-tabs : #ffffff;
+
+$color-hover-tabs : #23aa53;
+
+$color-border-tabs : #4d4d4d;
+
+$font-family-title : "oswald-semi-bold";
+
+@mixin arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    img{
+        padding: 5px;
+        background-color: $color-tabs;
+        border-radius: 50%;
+    }
+}

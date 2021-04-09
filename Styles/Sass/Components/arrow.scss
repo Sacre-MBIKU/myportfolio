@@ -1,0 +1,47 @@
+.arrow{
+        @include arrow;
+        width: 40px;
+        height: 40px;
+        z-index: 20000;
+        
+        
+}
+
+.arrowLeft{
+    
+    left: 2%;
+    z-index: 200000;
+    transform: rotate(180deg);
+}
+
+.arrowRight{
+    transform: rotate(0deg);
+    right: 2%;
+}
+
+.project__arrows{
+    @include arrow;
+    width: 20px;
+    height: 20px;
+    img{
+
+    background-color: transparent;
+    }
+}
+
+.project__arrows--left{
+    left: 20%;
+    transform: rotate(180deg);
+    @media screen and (max-width : 411px) {
+       left: 10%;
+       transform: translateX(-50%) rotate(180deg);
+    }
+}
+
+.project__arrows--right{
+    right: 20%;
+    @media screen and (max-width : 411px) {
+        right: 10%;
+     }
+ 
+}

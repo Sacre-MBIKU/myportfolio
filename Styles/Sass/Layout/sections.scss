@@ -1,0 +1,24 @@
+
+.container {
+	background-color: $background-color;
+	display: block;
+	align-items: center;
+	overflow-y: hidden;
+	width: 100%; 
+	height: 100vh;
+	section {
+		width: 100%; 
+		height: 100%;
+        position: relative;
+		display: none;
+	}
+
+	.activeContent{
+		display: flex;
+	}
+}
+
+.smooth { transition: transform .5s ease-out; }
+
+
+@import "../Components/arrow.scss"

@@ -1,0 +1,79 @@
+.menu-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    background-color: $background-color;
+    opacity: 1;
+    z-index: 20000000;
+    @include displayCenter;
+    display: none;
+    animation: appearMenuBar .7s ease-in-out;
+
+
+    
+
+    @import "../Components/tabs.scss";
+    ul{
+        @include displayColumnCenter;
+        height: 80%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        li{
+            width: 80%;
+            border-bottom: 1px solid $color-border-tabs;
+            padding: 0 ;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            
+
+            a{
+                height: 50%;
+                padding: .5rem 0;
+                margin: 0;
+                text-align: center;
+                display: flex;
+                align-items: center;
+            }
+
+            &.menu-bar-parts--cross-icon{
+                border-style: none;
+                position: absolute;
+                top: -8%;
+                right: 5%;
+                display: flex;
+                justify-content: flex-end;
+                i{
+                    cursor: pointer;
+                    font-size: 3.5rem;
+                    color: $color-tabs;
+                    font-family: sans-serif;
+                    transition: ease-in-out 1s color;
+                    &:hover{
+                        color: $color-hover-tabs;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 412px ) {
+        display: none;
+    }
+}
+
+@keyframes appearMenuBar{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}

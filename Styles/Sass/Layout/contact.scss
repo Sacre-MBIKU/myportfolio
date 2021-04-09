@@ -1,0 +1,12 @@
+.about{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    animation: appearSection 2s ease-in-out;
+}
+
+
+@import "../Components/contactContainer.scss";

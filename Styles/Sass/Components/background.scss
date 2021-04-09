@@ -1,0 +1,15 @@
+.imageBG{
+    width: 45%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+
+    img{
+        width: auto;
+        max-height: 100%;
+        opacity: .5;
+    }
+
+}

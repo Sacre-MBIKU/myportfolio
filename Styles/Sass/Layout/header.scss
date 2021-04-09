@@ -1,0 +1,64 @@
+header{
+	position: fixed;
+    z-index: 100;
+    width: 100%;
+    max-width: 100%;
+    height: 20%;
+    
+
+    @include displayCenterBot;
+
+    @media screen and (max-width : 411px) {
+        height: 15%;
+        border-bottom: 1px solid $color-border-tabs;
+    }
+
+    nav{
+        width: 50%;
+        border-bottom: 1px solid $color-border-tabs;
+        animation: navHide .6s ease-out;
+        
+        @media screen and (max-width : 768px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width : 411px) {
+            display: none;
+        }
+
+
+        
+
+       @import "../Components/tabs.scss";
+    }
+}
+
+h1.logo{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-family: $font-family-tabs;
+    font-size: 1.8rem;
+    color: $color-tabs ;
+
+    span{
+        color: $color-hover-tabs;
+    }
+}
+
+.navBar{
+    position: absolute;
+    cursor: pointer;
+    top: 20%;
+    right: 2%;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url("../../../Publics/Images/menu-barre.svg");
+    background-color: transparent;
+    border-style: none;
+    animation: navBarAppear ease-in-out all .5s ;
+    @media screen and (min-width: 412px ) {
+        display: none;
+    }
+}

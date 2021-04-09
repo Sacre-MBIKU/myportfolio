@@ -1,0 +1,450 @@
+.about{
+
+    width: 100%;
+    height: 100vh;
+    background-color: $background-color;
+    transition: all 2.9s ease-in-out;
+    animation: appearabout 2s cubic-bezier(0.34,-0.59, 0.77, 1.45) ;
+    
+    @include displayCenterBot;
+
+
+    .aboutContainer{
+        position: relative;
+        width: 100%;
+        height: 80%;
+        margin-top: 10%;
+        .about-title{
+            position: absolute;
+            width: 15%;
+            height: 15%;
+            top: 25%;
+            left: 28%;
+    
+            @media screen and (max-width : 975px) {
+                width: 30%;
+                height: 15%;
+                top: 25%;
+                left : 20%
+            }
+            
+    
+    
+            span{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                font-family: $font-family-title;
+                color: $color-tabs;
+                font-size: 1.2em;
+                padding: .9em;
+    
+    
+                @media screen and (max-width : 975px) {
+                    width: 95%;
+                    font-size: .5em;
+                    padding: .19em;
+                    margin: .3em;
+                }
+    
+               
+                    &:nth-child(1)::before{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    content: "";
+                    width: 2px;
+                    height: 50px;
+                    background-color: $color-hover-tabs;
+        
+                    @media screen and (max-width : 975px) {
+                        height: 10px;
+    
+                    }
+    
+                }
+    
+                &:nth-child(1)::after{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content: "";
+                    width: 30px;
+                    height: 2px;
+                    background-color: $color-hover-tabs;
+    
+                    @media screen and (max-width : 975px) {
+                       
+                        width: 20px;
+    
+                    }
+        
+                }
+        
+                &:nth-child(2)::before{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    content: "";
+                    width: 2px;
+                    height: 50px;
+                    background-color: $color-hover-tabs;
+    
+                    @media screen and (max-width : 975px) {
+                        height: 20px;
+    
+                    }
+        
+                }
+    
+                &:nth-child(2)::after{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    content: "";
+                    width: 30px;
+                    height: 2px;
+                    background-color: $color-hover-tabs;
+    
+                    @media screen and (max-width : 975px) {
+                        width: 20px;
+    
+                    }
+        
+                }
+        
+                
+            }
+        }
+    
+        .about__picture{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 150px;
+    
+            @media screen and (max-width : 975px) {
+                width: 90px;
+                height: 90px;
+                top: 15%;
+            }
+
+            @media screen and (max-width : 411px) {
+                left: 70%;
+                transform: translateX(-50%);
+            }
+    
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 100%;
+                box-shadow: -1px 5px 5px 1px  $color-border-tabs;
+                background-position: bottom;
+            }
+        }
+    
+        .about-skills{
+            position: absolute;
+            top: 40%;
+            width: 30%;
+            height: 50%;
+            margin: 0;
+            padding: 0;
+            right: 10%;
+    
+            .about-skilss-title{
+                position: relative;
+                margin: 0;
+                top: 0;
+                width: 100%;
+                height: 15%;
+    
+                font-family: $font-family-title;
+                color: $color-tabs;
+                font-size: 1.5em;
+                text-decoration-line: underline;
+                
+    
+                @media screen and (max-width : 775px) {
+                    font-size: .9em;
+                    width: 100%;
+                }
+    
+                &:before{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    content: "";
+                    width: 2px;
+                    height: 2em;
+                    background-color: $color-hover-tabs;
+        
+    
+                    @media screen and (max-width : 775px) {
+                        height: 1em;
+                    }
+    
+                }
+    
+                &::after{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    content: "";
+                    width: 11em;
+                    height: 2px;
+                    background-color: $color-hover-tabs;
+        
+                    @media screen and (max-width : 775px) {
+                        width: 3em;
+                    }
+                    
+                }
+                
+            }
+    
+            .about-skills-list{
+                position: relative;
+                height: 80.5%;
+                display: flex;
+                flex-direction: column;
+                align-items: space-around;
+    
+                @media screen and (max-width: 775px) {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+            
+    
+                .skills-list-circles{
+                    width: 100%;
+                    height: 11%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+    
+                    
+    
+                    p{
+                        width: auto;
+                        font-family: $font-family-tabs;
+                        color: $color-tabs;
+                        @media screen and (max-width : 775px) {
+                            font-size: .5em;
+                            margin: 0;
+                        }
+                    }
+    
+                    ul{
+                        display: flex;
+                        width: 60%;
+                        justify-content: space-between;
+                        position: relative;
+    
+                        @media screen and (max-width : 775px) {
+                            align-items: center;
+                            width: 90%;
+                            margin: 0;
+                        }
+                        li{
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 100%;
+                            list-style: none;
+                            border: 2px solid $color-hover-tabs;
+    
+    
+                            @media screen and (max-width : 775px) {
+                                width: 5px;
+                                height: 5px;
+                            }
+    
+                            &.skill-master-circles--active{
+                                background-color: $color-hover-tabs;
+                            }
+                        }
+    
+    
+                        
+                    }
+                }
+    
+    
+                &:before{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    content: "";
+                    width: 2px;
+                    height: 2em;
+                    background-color: $color-hover-tabs;
+                    
+                    @media screen and (max-width : 775px) {
+                        height: 1em;
+                        bottom: 7%;
+                    }
+                }
+    
+            
+    
+                &::after{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    content: "";
+                    width: 8em;
+                    height: 2px;
+                    background-color: $color-hover-tabs;
+    
+                    @media screen and (max-width : 775px) {
+                        width: 4em;
+                        bottom: 7%;
+                    }
+        
+                }
+            }
+    
+        }
+    
+        .about-education{
+            position: absolute;
+            bottom: 10%;
+            left: 20%;
+    
+            @media screen and (max-width : 775px) {
+                left: 10%;
+                width: 45%;
+            }
+    
+            .about-education-title{
+                
+                position: relative;
+                margin: 0;
+                top: 0;
+                width: auto;
+                height: 15%;
+    
+                font-family: $font-family-title;
+                color: $color-tabs;
+                font-size: 1.5em;
+                text-decoration-line: underline;
+                
+                @media screen and (max-width : 775px) {
+                    font-size: .9em;
+                    width: 100%;
+                }
+    
+    
+                &:before{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    content: "";
+                    width: 2px;
+                    height: 2em;
+                    background-color: $color-hover-tabs;
+    
+                    @media screen and (max-width : 775px) {
+                        height: 1em;
+                    }
+        
+                }
+    
+                &::after{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    content: "";
+                    width: 10.5em;
+                    height: 2px;
+                    background-color: $color-hover-tabs;
+        
+                    @media screen and (max-width : 775px) {
+                        width: 3em;
+                    }
+                }
+               
+            }
+    
+            .about-education-list{
+                    position: relative;
+                    height: 80.5%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: space-around;
+                    margin: 0;
+    
+                    @media screen and (max-width: 775px) {
+                        width: 100%;
+                        padding: 0;
+                    }
+    
+                    .education-list{
+                    width: 100%;
+                    height: 11%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 2em 0;
+    
+                    
+    
+                        p{
+                            width: auto;
+                            font-family: $font-family-tabs;
+                            color: $color-tabs;
+    
+                            @media screen and (max-width: 775px) {
+                                font-size: .8em;
+                            }
+                            span{
+                                color: $color-hover-tabs;
+                            }
+                        }
+                    }
+    
+    
+    
+    
+    
+                    &:before{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        content: "";
+                        width: 2px;
+                        height: 2em;
+                        background-color: $color-hover-tabs;
+    
+                        @media screen and (max-width) {
+                            bottom: -3em;
+                        }
+            
+                    }
+        
+                
+        
+                    &::after{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        content: "";
+                        width: 8em;
+                        height: 2px;
+                        background-color: $color-hover-tabs;
+    
+                        @media screen and (max-width) {
+                            bottom: -3em;
+                        }
+            
+                    }
+            }
+        }
+    }
+
+}    
+
