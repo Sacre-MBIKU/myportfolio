@@ -1,26 +1,26 @@
 @font-face {
   font-family: "oswald-bold";
-  src: url("../../../Publics/Oswald/static/Oswald-Bold.ttf");
+  src: url("Publics/Oswald/static/Oswald-Bold.ttf");
 }
 @font-face {
   font-family: "oswald-semi-bold";
-  src: url("../../../Publics/Oswald/static/Oswald-SemiBold.ttf");
+  src: url("Publics/Oswald/static/Oswald-SemiBold.ttf");
 }
 @font-face {
   font-family: "oswald-medium";
-  src: url("../../../Publics/Oswald/static/Oswald-Medium.ttf");
+  src: url("Publics/Oswald/static/Oswald-Medium.ttf");
 }
 @font-face {
   font-family: "oswald-regular";
-  src: url("../../../Publics/Oswald/static/Oswald-Regular.ttf");
+  src: url("Publics/Oswald/static/Oswald-Regular.ttf");
 }
 @font-face {
   font-family: "oswald-light";
-  src: url("../../../Publics/Oswald/static/Oswald-Light.ttf");
+  src: url("Publics/Oswald/static/Oswald-Light.ttf");
 }
 @font-face {
   font-family: "train-one";
-  src: url("../../../Publics/Train_One/TrainOne-Regular.ttf");
+  src: url("Publics/Train_One/TrainOne-Regular.ttf");
 }
 * {
   margin: 0;
