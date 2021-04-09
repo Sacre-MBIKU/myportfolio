@@ -3,11 +3,11 @@
       { "id": 1, "phrase": ", développeur fullstack web. " }
     ],
     "projets": [
-      { "id": 1, "title": "Déscription", "phrase" : "site vitrine de la KINSHASA DIGITAL", "date" : "Mars, 08, 2021", "imageUrl" : "../Publics/Images/kd.png", "projetUrl" :"https://kinshasadigitalwakane.netlify.app/" },
-      { "id": 2, "title": "Déscription", "phrase" : "carnet de contact TRACE LUVIKI", "date" : "Mars, 24, 2021", "imageUrl" : "../Publics/Images/carnet de contact.png", "projetUrl" :"https://kinshasadigitalwakane.netlify.app/" },
-      { "id": 3, "title": "Déscription", "phrase" : "formulaire de contact MBOKO & Co", "date" : "Février, 08, 2021", "imageUrl" : "../Publics/Images/formulaire.png", "projetUrl" :"https://sacre-mbiku.github.io/formulaireHTML/" }
+      { "id": 1, "title": "Déscription", "phrase" : "site vitrine de la KINSHASA DIGITAL", "date" : "Mars, 08, 2021", "imageUrl" : "Publics/Images/kd.png", "projetUrl" :"https://kinshasadigitalwakane.netlify.app/" },
+      { "id": 2, "title": "Déscription", "phrase" : "carnet de contact TRACE LUVIKI", "date" : "Mars, 24, 2021", "imageUrl" : "Publics/Images/carnet de contact.png", "projetUrl" :"https://kinshasadigitalwakane.netlify.app/" },
+      { "id": 3, "title": "Déscription", "phrase" : "formulaire de contact MBOKO & Co", "date" : "Février, 08, 2021", "imageUrl" : "Publics/Images/formulaire.png", "projetUrl" :"https://sacre-mbiku.github.io/formulaireHTML/" }
     ],
-    "noms": { "name": "MUKWAKANI", "lastName" : "MBIKU", "firstName" : "Sacré", "profile" : "../Publics/Images/bac.svg" },
+    "noms": { "name": "MUKWAKANI", "lastName" : "MBIKU", "firstName" : "Sacré", "profile" : "Publics/Images/bac.svg" },
 
     "competences": [
         { "id" : 1, "title" : "HTML", "niveau" : 5},
