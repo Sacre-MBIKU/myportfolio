@@ -11,7 +11,7 @@
  * 
  */
 
-let navTabs = document.querySelectorAll("nav a");
+let navTabs = document.querySelectorAll("a");
 
 //La fonction qui gère l'onglet actif
 

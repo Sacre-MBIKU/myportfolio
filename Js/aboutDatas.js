@@ -7,11 +7,10 @@ let urlApi = "https://60706ab685c3f00017470139.mockapi.io/"
 //La classe Name qui décrit le nom au DOM
 
 class NamesAbout {
-    constructor(firstName, lastName, name, urlProfile){
+    constructor(firstName, lastName, name){
         this.firstName = firstName;
         this.lastName = lastName
         this.name = name
-        this.urlProfile = urlProfile;
  
         
     }
@@ -19,16 +18,14 @@ class NamesAbout {
      setAboutNames(){
         let aboutTitle = document.querySelector(".about-title")
         let aboutPicture = document.querySelector(".about__picture")
-        let imgProfile =  document.createElement("img")
+        
         let spanFirstAndLastName =  document.createElement("span")
         let spanName =  document.createElement("span")
        
-        imgProfile.setAttribute("src", this.urlProfile)
-        imgProfile.setAttribute("alt", this.lastName + " profile")
         spanFirstAndLastName.innerText = this.firstName + " " + this.lastName
         spanName.innerText = this.name 
         
-        aboutPicture.appendChild(imgProfile)
+       
         aboutTitle.appendChild(spanFirstAndLastName)
         aboutTitle.appendChild(spanName)
        
@@ -51,10 +48,8 @@ class NamesAbout {
         console.log(lastName)
         let name = data[0].name
         console.log(name)
-        let profile = data[0].profile
-        console.log(profile)
         
-        let names = new NamesAbout(firstName, lastName, name, profile)
+        let names = new NamesAbout(firstName, lastName, name)
         names.setAboutNames()
        
  
