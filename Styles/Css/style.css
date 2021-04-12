@@ -343,7 +343,7 @@ h1.logo span {
 }
 .home__container .home____container__btns ul li {
   list-style: none;
-  width: 45%;
+  width: 25%;
 }
 .home__container .home____container__btns ul li a {
   display: flex;
@@ -356,7 +356,8 @@ h1.logo span {
   text-align: center;
   font-size: 1.3rem;
   line-height: 1.3rem;
-  padding: 1rem 1.1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   background-color: #4d4d4d;
   cursor: pointer;
   transition: all 0.8s ease-in-out;
