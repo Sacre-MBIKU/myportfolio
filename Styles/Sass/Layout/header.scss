@@ -7,10 +7,12 @@ header{
     
 
     @include displayCenterBot;
+  
 
     @media screen and (max-width : 411px) {
         height: 15%;
         border-bottom: 1px solid $color-border-tabs;
+        box-shadow: 0 2px 3px 1px $color-tabs;
     }
 
     nav{
@@ -20,11 +22,15 @@ header{
         
         @media screen and (max-width : 768px) {
             width: 100%;
+            box-shadow: 0 2.5px 3px 1px $color-hover-tabs--second ;
+            border-bottom: 1px solid $color-hover-tabs;
         }
 
         @media screen and (max-width : 411px) {
             display: none;
+            
         }
+       
 
 
         

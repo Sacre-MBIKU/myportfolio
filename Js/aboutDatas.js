@@ -2,7 +2,7 @@
 * On renvoi les données du nom au DOM
 */
 
-let urlApi = "https://my-json-server.typicode.com/Sacre-MBIKU/myportfolio/"
+let urlApi = "https://60706ab685c3f00017470139.mockapi.io/"
 
 //La classe Name qui décrit le nom au DOM
 
@@ -45,13 +45,13 @@ class NamesAbout {
     })
     .then(function (data){
         
-        let firstName = data.firstName
-        console.log(firstName)
-        let lastName = data.lastName
+        let firstName = data[0].firstName
+        console.log(data)
+        let lastName = data[0].lastName
         console.log(lastName)
-        let name = data.name
+        let name = data[0].name
         console.log(name)
-        let profile = data.profile
+        let profile = data[0].profile
         console.log(profile)
         
         let names = new NamesAbout(firstName, lastName, name, profile)
@@ -212,3 +212,11 @@ class Education {
     })
  
  
+
+
+       /**
+* On renvoi les données du nom au DOM
+*/
+
+
+

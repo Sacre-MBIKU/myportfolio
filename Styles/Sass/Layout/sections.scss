@@ -1,6 +1,11 @@
 
 .container {
 	background-color: $background-color;
+    background-image: url("../../../Publics/Images/overlay.svg");
+	backface-visibility: .1;
+	background-position:center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	display: block;
 	align-items: center;
 	overflow-y: hidden;
