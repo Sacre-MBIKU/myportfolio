@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyes = createGlobalStyle`
     
@@ -10,6 +10,22 @@ const GlobalStyes = createGlobalStyle`
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 0;
+        padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    li{
+        list-style: none;
+    }
+    button {
+        border-style: none;
     }
 
 `;
