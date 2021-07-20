@@ -16,8 +16,8 @@ const Navbar = () => {
             <Image
               src='/images/logo 1.svg'
               alt='Sacré MBIKU MUKWAKANI'
-              width='150'
-              height='150'
+              width='80'
+              height='80'
             />
           </a>
         </Link>
