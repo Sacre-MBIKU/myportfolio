@@ -8,6 +8,10 @@ left : ${({horizontalPosition}) => horizontalPosition ? `${horizontalPosition}%`
 width: 180px;
 height: 60%;
 background-color: #0070f3;
+
+@media (max-width : 950px ) {
+    display: none;
+}
 `;
 
 export default SidebarStyled;

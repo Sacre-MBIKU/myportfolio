@@ -28,6 +28,11 @@ const GlobalStyes = createGlobalStyle`
         border-style: none;
     }
 
+    a{
+        text-decoration : none;
+        color: none;
+    }
+
 `;
 
 export default GlobalStyes;

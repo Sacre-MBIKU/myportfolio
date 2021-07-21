@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 const NavbarStyled = styled.header`
   width: 100%;
-  min-height: 5rem;
+  height: 5rem;
   border-bottom: 3px solid #0070f3;
   display: flex;
   justify-content: center;
