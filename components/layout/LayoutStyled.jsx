@@ -6,6 +6,7 @@ const LayoutStyled = styled.div`
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
 `;
 export default LayoutStyled;

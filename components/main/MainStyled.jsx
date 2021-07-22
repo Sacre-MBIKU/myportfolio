@@ -8,8 +8,9 @@ const MainStyled = styled.main`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 15rem;
   justify-content: center;
+  transform: translateY(25%);
 
   section {
     justify-content: center;
