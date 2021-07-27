@@ -4,7 +4,7 @@ const SectionTitleStyled = styled.div`
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: 50%;
+  left: 42%;
   top: -4%;
   transform: translateX(-25%);
 

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const AboutStyled = styled.div`
-  width: 85%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   position: relative;
 
   section {
@@ -13,7 +13,10 @@ const AboutStyled = styled.div`
   .profile {
     display: flex;
     align-items: center;
-    width: 35%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .profile-image {
       width: 240px;
@@ -73,25 +76,22 @@ const AboutStyled = styled.div`
       }
     }
     @media (max-width: 700px) {
-      
       margin-top: 0;
     }
-
-    
   }
   @media (max-width: 1160px) {
-      width: 95%;
-      justify-content: start;
-    }
-    @media (max-width: 850px) {
-      width: 100%;
-      justify-content: space-around;
-    }
+    width: 95%;
+    justify-content: start;
+  }
+  @media (max-width: 850px) {
+    width: 100%;
+    justify-content: space-around;
+  }
 
-    @media (max-width: 700px) {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+  @media (max-width: 700px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 export default AboutStyled;
