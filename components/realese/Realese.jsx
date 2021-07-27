@@ -4,7 +4,7 @@ import SectionTitle from "../section-title/SectionTitle";
 
 const Realese = () => {
   return (
-    <RealeseStyled>
+    <RealeseStyled id = "releases">
       <SectionTitle>
         <h2>Réalisations</h2>
         <h3>Réalisations</h3>

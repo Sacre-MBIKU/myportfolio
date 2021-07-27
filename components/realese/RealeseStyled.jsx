@@ -10,7 +10,7 @@ const RealeseStyled = styled.section`
   align-items: center;
 
   .realese {
-    padding-top: 10%;
+    padding-top: 15%;
     padding-bottom: 10%;
     width: 100%;
     display: flex;

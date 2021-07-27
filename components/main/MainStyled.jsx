@@ -8,7 +8,7 @@ const MainStyled = styled.main`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
   justify-content: center;
   transform: translateY(25%);
 
@@ -26,6 +26,11 @@ const MainStyled = styled.main`
     width: 1.5rem;
     height: 2rem;
     animation: goDown .4s infinite alternate;
+    cursor: pointer;
+
+    @media (max-width : 950px ) {
+      display: none;
+    }
   }
 
 
@@ -56,7 +61,7 @@ const MainStyled = styled.main`
 
     h1 {
       margin-bottom: 2rem;
-      color: #fff;
+      color: #0070f3;
       font-size: 2.5rem;
       font-weight: bold;
       position: relative;
@@ -79,7 +84,6 @@ const MainStyled = styled.main`
         width: 100%;
       }
     }
-
     button {
       width: 9rem;
       padding: 0.5rem 1rem;
@@ -87,6 +91,11 @@ const MainStyled = styled.main`
       color: #fff;
       font-weight: 700;
       font-size: 0.9rem;
+      position: absolute;
+      bottom: -10%;
+      left : 5%;
+      cursor: pointer;
+      
     }
   }
 
@@ -94,7 +103,9 @@ const MainStyled = styled.main`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: relative;
+    position: absolute;
+    top: -20%;
+    right: 5%;
 
     @media (max-width : 950px ) {
       padding: 0 35%;

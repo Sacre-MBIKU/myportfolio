@@ -5,7 +5,7 @@ import SectionTitle from "../section-title/SectionTitle";
 
 const Contact = () => {
   return (
-    <ContactStyled>
+    <ContactStyled id ="contact">
       <SectionTitle>
         <h2>Contact</h2>
         <h3>Contact</h3>

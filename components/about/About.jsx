@@ -5,7 +5,7 @@ import SectionTitle from "../section-title/SectionTitle";
 const About = () => {
   return (
     <>
-      <AboutStyled>
+      <AboutStyled id="about">
         <SectionTitle>
           <h2>A propos de moi</h2>
           <h3>A propos de moi</h3>

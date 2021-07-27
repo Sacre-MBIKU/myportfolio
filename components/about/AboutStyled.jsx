@@ -5,18 +5,26 @@ const AboutStyled = styled.div`
   display: flex;
   justify-content: space-around;
   position: relative;
+  margin-bottom: 6rem;
 
   section {
-    min-height: 85vh;
+    min-height: 65vh;
   }
 
   .profile {
     display: flex;
     align-items: center;
-    width: 25%;
+    min-width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 1200px) {
+    margin-left: 5%;
+  }
+    @media (max-width: 800px) {
+      margin-top: 2rem;
+    width: 90%;
+  }
 
     .profile-image {
       width: 240px;
@@ -37,18 +45,33 @@ const AboutStyled = styled.div`
 
   .description {
     width: 60%;
-    margin-top: 2.5rem;
+    margin-top: 5rem;
+    margin-left: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
+    @media (max-width: 1200px) {
+    width: 50%;
+  }
+
+    @media (max-width: 868px) {
+      bottom: 0;
+    }
+
+    @media (max-width: 800px) {
+    width: 90%;
+  }
+
     .presentation {
       margin-bottom: 2rem;
       color: #fff;
+      
       strong {
         color: #0070f3;
       }
     }
+    
 
     .profile-phrase {
       margin-bottom: 2rem;
@@ -75,10 +98,13 @@ const AboutStyled = styled.div`
         }
       }
     }
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       margin-top: 0;
     }
   }
+
+  @media (max-width: 1165px) {
+    }
   @media (max-width: 1160px) {
     width: 95%;
     justify-content: start;
@@ -88,10 +114,10 @@ const AboutStyled = styled.div`
     justify-content: space-around;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 `;
 export default AboutStyled;

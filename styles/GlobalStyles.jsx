@@ -2,8 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyes = createGlobalStyle`
     
+    html {
+        
+  scroll-behavior: smooth;
+  width: 100vw;
+}
     body {
-        width: 100vw;
+        width: 100%;
         height: auto;
         overflow-x: hidden;
         background-color: #282828;
@@ -30,25 +35,27 @@ const GlobalStyes = createGlobalStyle`
     }
 
     a{
+  color: inherit;
         text-decoration : none;
         color: none;
+        transition: all .5s ease-in ;
     }
 
     footer {
         position: absolute;
         width: 60%;
-        height: 5rem;
+        height: 3rem;
         background-color: #0070f3;
-        top: 100%; 
+        top:100%; 
         left: 50%;
-        transform: translateX(-55%);
+        transform: translateX(-50%);
         display: flex;
         ul {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
-            align-items: flex-end;
+            align-items: center;
 
             li{
                 margin-right: 1rem;
@@ -66,13 +73,19 @@ const GlobalStyes = createGlobalStyle`
     .button-up-to-page {
         position: absolute;
         left: 50%;
-        bottom: 3rem;
+        bottom: 3.5rem;
         transform: translateX(-80%);
         border-style: none;
         
         button {
             border-style: none;
-            padding: 1rem .5rem;
+            width: 2rem;
+            height: 3rem;
+            background-image: url("/images/up.svg");
+            background-position: center;
+            background-size: 80% cover;
+            background-repeat: no-repeat;
+            cursor: pointer;
         }
         
     }

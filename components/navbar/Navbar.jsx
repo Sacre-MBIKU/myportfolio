@@ -39,22 +39,22 @@ const Navbar = () => {
             </Link>
           </ListLink>
           <ListLink>
-            <Link href='/about'>
+            <Link href='#about'>
               <a>A propos</a>
             </Link>
           </ListLink>
           <ListLink>
-            <Link href='/skills'>
+            <Link href='#skills'>
               <a>Compétences</a>
             </Link>
           </ListLink>
           <ListLink>
-            <Link href='/releases'>
+            <Link href='#releases'>
               <a>Réalisations</a>
             </Link>
           </ListLink>
           <ListLink>
-            <Link href='/contact'>
+            <Link href='#contact'>
               <a>Contact</a>
             </Link>
           </ListLink>

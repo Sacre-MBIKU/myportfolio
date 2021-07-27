@@ -6,9 +6,10 @@ import Realese from "../components/realese/Realese";
 import Contact from "../components/contact/Contact";
 import Image from "next/image";
 export default function Home() {
+  
   return (
     <>
-      <Sidebar topPosition='4' />
+      <Sidebar topPosition='3.5' />
       <Main />
       <About />
       <Skills />
@@ -57,10 +58,6 @@ export default function Home() {
             </a>
           </li>
         </ul>
-
-        <div className='button-up-to-page'>
-          <button>up</button>
-        </div>
       </footer>
     </>
   );

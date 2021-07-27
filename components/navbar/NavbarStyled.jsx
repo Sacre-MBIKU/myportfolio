@@ -10,6 +10,10 @@ const NavbarStyled = styled.header`
   align-items: center;
   transition: all 0.5s ease-in;
 
+  a:hover {
+    color : #0070f3;
+  }
+
   nav {
     width: 75%;
     height: 100%;

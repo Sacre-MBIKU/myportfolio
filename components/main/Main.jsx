@@ -1,6 +1,15 @@
 import MainStyled from "./MainStyled";
 import Image from "next/image";
 const Main = () => {
+  const goToContact = () => {
+    document.body.scrollTop = 1000090; // For Safari
+    document.documentElement.scrollTop = 1000090; // For Chrome, Firefox, IE and Opera
+  };
+
+  const goToAbout = () => {
+    document.body.scrollTop = 550; // For Safari
+    document.documentElement.scrollTop = 550; // For Chrome, Firefox, IE and Opera
+  };
   return (
     <>
       <MainStyled>
@@ -10,8 +19,8 @@ const Main = () => {
           <h2>
             Développeur fullstack web et <span>UI / UX Designer.</span>
           </h2>
-          <button>Contactez moi</button>
-          <p className='go-down-button'> </p>
+          <button onClick = {goToContact}>Contactez moi</button>
+          <p className='go-down-button' onClick = {goToAbout}> </p>
         </section>
         <section className='ui-ux-section'>
           <Image
